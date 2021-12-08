@@ -1,0 +1,213 @@
+body{
+height:1000px;
+background: linear-gradient(to bottom, #141de9,#16c0eb)
+}
+p{
+    font-size: 14px;
+    font-family:Arial, Helvetica, sans-serif ;
+    opacity: 0.7;
+    font-weight: 700;
+}
+.wrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 5px solid grey;
+    background-color: white;
+    box-shadow: 7px 7px 1px black;
+    max-height: 850px;
+}
+.header{
+    width: 100%;
+    height: 50px;
+}
+.navigation{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+.navigation__img{
+    width: 50%;
+    object-fit: cover;
+}
+.logo__text::first-letter{
+    color:red;
+}
+
+
+.logo__text::first-line{
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 30px;
+
+}
+
+
+
+
+.img__logo{
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+.logo__text{
+    margin-top: calc(100px / 2);
+   position: absolute;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 12px;
+
+}
+
+.navigation__menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin-left: 0;
+}
+.navigation__menu li{
+    padding: 0 15px;
+}
+.navigation__menu li a{
+    text-decoration: none;
+    color:black;
+      transition: color 0.5s ease-in;
+}
+.navigation__menu li:hover a{
+    color:red;
+  
+}
+.img__content{
+    width: 100%;
+}
+.img__content img{
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+}
+.content__body{
+    padding: 10px 15px;
+}
+
+.content__desc{
+    line-height: 1.1;
+    font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+        
+}
+.hr-line{
+    border-top: 1px solid black;
+margin: 0 auto;
+    width: 95%;
+}
+.copy__right{
+    text-align: center;
+    margin-top: 35px;
+
+}
+footer{
+    margin: 30px auto;
+}
+
+
+
+
+.content__slider{
+    max-width: 850px;
+    position: relative;
+   
+    margin: 20px auto;
+}
+
+.mySlides{
+display: none;
+}
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: black;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+.mySlides img {
+width: 100%;
+height: 200px;
+object-fit:fill;
+
+display: block;
+}
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(2, 2, 2, 0.8);
+    color:white;
+  }
+  .text {
+    color: black;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  .numbertext {
+    color: white;
+    font-size: 16px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+font-weight: bold;
+  }
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .dot--center{
+      text-align: center;
+  }
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }  
+  

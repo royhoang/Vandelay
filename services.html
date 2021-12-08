@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/services.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="navigation">
+                <div class="navigation__img">
+<img class="img__logo" src="/img/logo.jfif" alt="vandelay">
+<span class="logo__text">vandelay <br> listening for alien life</span>
+                </div>
+              <div class="navigation__menu">
+                  <ul>
+                      <li><a href="/index.html">about</a></li>
+                      <li><a href="#">services</a></li>
+                      <li><a href="/media.html">media</a></li>
+                      <li><a href="/contact.html">contact</a></li>
+                  </ul>
+              </div> 
+            </div>
+        </header>
+
+        <body>
+            <div class="content">
+                <div class="img__content">
+                    <img src="/img/vetinh.jpg" alt="">
+                </div>
+               
+            </div>
+            <div class="content__body">
+                <div class="content__title">
+                    <h1>Services</h1>
+                </div>
+                <div class="content__desc">
+                    <p>Since its Inception, Vandelay delivers fantastic images of space. Perhaps more importantly, our exploration of space has taught us to view Earth, and the universe in a new way. While the tremedous technical and scientific accomplishments of Vandelay demonstrate vividly that humans can achieve previously inconceivable feats, we also are humbled by the realization that Earth is just a tiny "blue marble" in the cosmos.</p>
+                </div>
+               
+            </div>
+            <div class="content__slider">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 7</div>
+                    <img src="/img/1.jfif">
+                    <div class="text">Caption Text</div>
+                  </div>
+                  <div class="mySlides fade">
+                    <div class="numbertext">2 / 7</div>
+                    <img src="/img/2.jfif">
+                    <div class="text">Caption Text</div>
+                  </div>
+                  <div class="mySlides fade">
+                    <div class="numbertext">3 / 7</div>
+                    <img src="/img/3.jfif">
+                    <div class="text">Caption Text</div>
+                  </div>
+                  <div class="mySlides fade">
+                    <div class="numbertext">4 / 7</div>
+                    <img src="/img/4.jfif">
+                    <div class="text">Caption Text</div>
+                  </div>
+                  <div class="mySlides fade">
+                    <div class="numbertext">5 / 7</div>
+                    <img src="/img/5.jfif">
+                    <div class="text">Caption Text</div>
+                  </div>
+                  <div class="mySlides fade">
+                    <div class="numbertext">6 / 7</div>
+                    <img src="/img/6.jfif">
+                    <div class="text">Caption Text</div>
+                  </div>
+                  <div class="mySlides fade">
+                    <div class="numbertext">7 / 7</div>
+                    <img src="/img/7.jfif">
+                    <div class="text">Caption Text</div>
+                  </div>
+
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div class="dot--center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+          </div>
+      <footer>
+            <div class="hr-line">
+
+            </div>
+            <div class="copy__right">
+                <span>Copyright &copy; Vandelay Industries <br>2011</span>
+            </div>
+        </footer>
+     </div> 
+        </body>
+           
+      
+       
+    
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+        
+</body>
+</html>

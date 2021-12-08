@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/contact.css">
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <title>Contact</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="navigation">
+                <div class="navigation__img">
+<img class="img__logo" src="/img/logo.jfif" alt="vandelay">
+<span class="logo__text">vandelay <br> listening for alien life</span>
+                </div>
+              <div class="navigation__menu">
+                  <ul>
+                      <li><a href="/index.html">about</a></li>
+                      <li><a href="/services.html">services</a></li>
+                      <li><a href="/media.html">media</a></li>
+                      <li><a href="#">contact</a></li>
+                  </ul>
+              </div> 
+            </div>
+        </header>
+
+        <body>
+            <div class="content">
+                <div class="img__content">
+                    <img src="/img/vetinh.jpg" alt="">
+                </div>
+                <div class="content__text">
+                    <div class="content__text--right">
+                        <div class=" content-title content__us">
+                            <h2>Contact Us</h2>
+                            <p>Based on responses from more than 212,000 federal employees last year, Vandelay's workforce continues to score well and the agency is ranked third among large federal agencues as a best place to work.</p>
+                            <p>The rankings also reveal that Vandelay ranked second among all federal agencies in the categories of Effective Leadership, Teamwork and Support for Diversity, as well as other areas.</p>
+                        </div>
+                       <div class="content-title content__work">
+                           <h2>Work at Vandelay</h2>
+                           <p>Since its inception in 1958, Vandelay has accomplished many great scientific and technological feats in air and space. Vandelay technology also has been adapted for many nonaerospace uses by the private sector.Vandelay remains a leading force in scientific research and in stimulating public interest in aerospace exploration, as well as science and technology in general.</p>
+                           <p>Perhaps more importantly, our exploration of space has taught us to new view Earth, ourselves, and the universe in a new way. While the tremendous techical and scientific accomplishments of Vandelay demonstrate vividly that humans can achieve perviously inconceivable feats, we also are humbled by the realization that Earth is just a tyni"blue marble" in the cosmos.</p>
+                       </div>
+
+                    </div>
+                    
+                    <div class="capcha">
+                        <div class="contact-body">
+                            <label for="user" class="contact-label">
+                                <span>Name:</span><span>*</span>
+                                
+                            </label>
+                            <input id="user" type="text" name="#"  required id="" class="form-control">
+                 
+                            <label for="email" class="contact-label">
+                             <span>Email:</span><span>*</span>
+                            
+                         </label>
+                         <input id="email"type="email" name="#"  required id="" class="form-control">
+                         
+                         <form class="message_form" onSubmit={this.send}>
+                             <p>Message</p>
+                            <textarea name="message" rows="1"></textarea>
+                          
+                        </form> 
+                            <div class="check__capcha">
+                                 <div class="g-recaptcha" data-sitekey="6LcDooYdAAAAAMb-S7LAmdBYaNUBK4AhTgentLY7"></div>
+                            <input type="submit" value="Submit" class="fb9" />
+                            </div>
+                           
+                        
+                     
+                    </div>
+                </div>
+            </div>
+        </body>
+        <footer>
+            <div class="hr-line">
+
+            </div>
+            <div class="copy__right">
+                <span>Copyright &copy; Vandelay Industries 2011</span>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
